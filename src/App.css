@@ -1,38 +1,303 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  background-color:  rgb(187, 163, 25);
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App{
+      background-color: white;
+      height: 360px;
+      width: 400px;
+      margin: auto;
+      margin-top: 10%;
+      padding: 30px 90px;
+      box-shadow: 5px 10px #888888;
+      border-radius: 10px;
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+  input{
+      background-color: gainsboro;
+      border-radius: 10px;
+      font-size: x-large;
+      opacity: 0.5;
+      margin-bottom: 25px;
   }
+  /*  background-color: rgb(136, 196, 1   36);*/
+  button{
+      background-color: gainsboro;
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;  
+  }
+  
+  
+  /*NavBar*/
+  .NavContainer{
+      background-color: white;
+      border: solid white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .logo > img{
+      width: 40%;
+  }
+  
+  .nav-links {
+      display: flex;
+      list-style: none;
+      font-family: "Courier New";
+      font-size: x-large;
+      margin-right: 20%;
+      justify-content: space-evenly;
+  }
+  
+  .L{
+    margin-left: 10%;  
+  }
+  
+  .L:hover{
+      color: gold;
+  }
+  
+  
+  /*Section 1*/
+  .Sec1{
+  background-image: url(./images/model4.jpg);
+  padding: 15%;
+  }
+  
+  
+  .book-btn{
+      background-color: rgb(187, 163, 25);
+      text-decoration: none;
+      border: none;
+      text-shadow: 2px 1px grey;
+      font-size: large;
+      width:20%;
+      font-family: Arial Black;
+  }
+
+  
+  .mod1{
+    background-color: black;
+    width: 27%;
+    padding: 5%;
+    padding-top: 0%;
+    color: white;
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 15%;
 }
+  
+  /*Section 2*/
+  .Sec2{
+      background-image: url(./images/lash2.jpg);
+      padding: 8% 15%;
+  }
+  
+  /*Section3*/
+  .Sec3{
+  background-color: rgb(187, 163, 25);
+  }
+  
+  /*FAQ*/
+  .FAQContainer{
+      background-image: url(./images/eyebrow.jpg); 
+      background-repeat: repeat; 
+  }
+  
+  .FAQ-wrapper{
+      background-color: rgb(187, 163, 25);
+      width: 70%;
+      height:1050px;
+      margin: auto;
+      color: black;
+      font-size: 15px;
+      padding: 2%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+   li> span{ 
+      color: black;
+  }
+
+  /*.ImGallery{
+      display: grid;
+      grid-gap: 20% 5%;
+      grid-template-columns: auto auto auto;
+      padding: 5%;
+      border: solid;
+      column-width: 50%;
+      column-count: 2;
+  }
+
+  .row{
+    width: 70%;
+    height: 200px;
+    border: solid;
+  
+  }*/
+
+  /*IMPROVEMENT
+  
+    .GalleryContainer{
+      padding: 3%;
+      border: solid 3px gray;
+  }
+
+  .ImGallery{
+    border: solid;
+    columns: 230px 3;
+    width: 75%;
+    margin: auto;
+    padding: 3%;
+    }
+
+.row{
+  border: solid;
+  height: 250px;
+  margin-top: 5%;
+}
+  
+  */
+   
+  /*GALLERY*/
+  .GalleryContainer{
+      padding: 3%;
+      
+  }
+
+  .ImGallery{
+   
+    columns: 230px 3;
+    width: 75%;
+    margin: auto;
+    padding: 3%;
+    background-color: white;
+    }
+
+
+.row{
+ 
+  height: 250px;
+  margin-bottom: 10%;
+  
+}
+  
+
+  /*Book Now*/
+  .book-wrapper{
+      background-color: white;
+      width: 73%;
+      height:600px;
+      margin: auto;
+      color: black;
+      text-align: center;
+  }
+  
+  .book-wrapper:focus{
+      color: none;
+  }
+  
+  .appt{
+      background-color: grey;
+      width: 67%;
+      height:280px;
+      color: black;
+      position: absolute;
+      font-size: 16px;
+      list-style: inside;
+      padding: 3%;
+  }
+
+  /* .appt-btn{
+      background-color: rgb(187, 163, 25);
+      text-decoration: none;
+      min-width: 15%;
+      position: absolute;
+      left: 43%;
+      top: 125%;
+      font-size: medium;
+      text-shadow: 2px 1px grey;
+      border-radius: 10px;
+  
+  }*/
+  .appt-btn{
+      background-color: rgb(187, 163, 25);
+      text-decoration: none;
+      width: 15%;
+        margin-top: 3%;
+      left: 43%;
+      font-size: medium;
+      text-shadow: 2px 1px grey;
+      border-radius: 10px;
+  
+  }
+  a{
+      text-decoration: none;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /*Contact*/
+
+  .EL > img{
+    width: 40%;
+      max-height: 30%;
+      border-radius: 20px 20px 5px 5px;
+      position: absolute;
+      margin-left: 30%; 
+     
+  }
+  
+  .contactform{
+      background-color: white;
+      width: 30%;
+      margin: auto;
+      margin-top: 5%;
+      margin-bottom: 5%;;
+      padding: 5%;
+      padding-top: 20%;
+      border-radius: 20px;
+      border: 2px solid black;
+  }
+  
+  .inputform{
+      background: transparent;
+      font-size: 15px;
+      color: #555555;
+      line-height: 1.2;
+      display: block;
+      width: 100%;
+      padding: 0 5px;
+  }
+  
+  .inputform-label{
+      font-size: 15px;
+      color: #808080;
+      width: 100%;
+      padding: 0 5px;
+  }
+  
+  /*Footer*/
+  .footer{
+      background-color: black;
+      height: 50%;
+      color: white;
+      font-family: "Courier New";
+      text-align: center;
+      padding: 5%;
+      font-family: 'snell roundhand';
+      }
+      
+      
+      
+      .sub{
+          background-color: rgb(187, 163, 25);
+          text-decoration: none;
+          width: 8%;
+          font-family: 'snell roundhand';
+      }
+      
