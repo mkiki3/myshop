@@ -10,7 +10,7 @@ import img4 from '../images/e4.jpg';
     display: 'flex', 
     justifyContent: 'space-between',
 
-    padding: '3%'
+    padding: '2%'
     }
 
     const imgStyle = {
@@ -40,7 +40,7 @@ import img4 from '../images/e4.jpg';
     const hashtagStyle = {
         color: 'black',
         textAlign: 'center',
-        fontSize: 'x-large',
+        fontSize: 'large',
         fontWeight: 'bold',
         letterSpacing: '10px'
     }
@@ -60,9 +60,9 @@ class App extends Component {
         <div className="Sec3">
              <div>
                  <span style={titleStyle}>@BBEAUTIANDLASHES</span>
-              <span>on all social platforms</span>on all social platforms
+              <span><b>on all social platforms</b></span>
               <br></br>
-            <div style={hashtagStyle}>#BBeautiAndLashes #BBeautiAndLashes #BBeautiAndLashes</div> </div>
+            <div style={hashtagStyle}><i>#BBEAUTIANDLASHES  #BBEAUTIANDLASHES #BBEAUTIANDLASHES </i></div> </div>
         <div style={containerStyle} >  
            <img style={imgStyle} src={img1} alt="eyelashes"></img>
            <img style={imgStyle} src={img2} alt="eyelashes"></img>

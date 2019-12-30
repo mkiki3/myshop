@@ -227,7 +227,7 @@ body{
   .appt-btn{
       background-color: rgb(187, 163, 25);
       text-decoration: none;
-      width: 15%;
+      width: 20%;
         margin-top: 3%;
       left: 43%;
       font-size: medium;
@@ -272,6 +272,11 @@ body{
       display: block;
       width: 100%;
       padding: 0 5px;
+      border: solid 1px rgb(187, 163, 25);
+  }
+  .inputform::placeholder { 
+    color: rgb(187, 163, 25);
+    opacity: 1; 
   }
   
   .inputform-label{
@@ -280,6 +285,29 @@ body{
       width: 100%;
       padding: 0 5px;
   }
+
+
+  /*SHOP*/
+  .ShopContainer{
+    padding: 3%;
+    
+}
+
+.shopGallery{
+ 
+  columns: 230px 3;
+  width: 75%;
+  margin: auto;
+  padding: 3%;
+  background-color: grey;
+  }
+
+
+.shoprow{
+height: 250px;
+margin-bottom: 10%;
+}
+
   
   /*Footer*/
   .footer{

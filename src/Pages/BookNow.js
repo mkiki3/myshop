@@ -19,7 +19,7 @@ const titleStyle={
 
 const titleStyle2={
     fontFamily: 'lulo-clean-w01-one-bold,sans-serif',
-    color: 'pink',
+  
     fontSize:' 50px',
     textAlign:'center',
     margin: '0px'
@@ -54,7 +54,7 @@ class App extends Component {
           <div className="book-wrapper">
             <h2 style={titleStyle}>Pre-Booking</h2>
             <h2 style={titleStyle2}>INFORMATION</h2>
-            <p style={titleStyle3}>*PLEASE READ BEFORE BOOKING*</p>
+            <p style={titleStyle3}><b>*PLEASE READ BEFORE BOOKING*</b></p>
             <div className="appt">
                 <ul>
                     <li><span>" A DEPOSIT IS <b>REQUIRED</b> TO BOOK YOUR APPOINTMENT. (your deposit goes towards your service.)"</span></li>
