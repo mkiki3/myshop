@@ -39,7 +39,6 @@ const posts = [
     const onSubmit = (event) => {
         event.preventDefault();
         console.log('Submitted! ');
-      // console.log( 'email: ' +this.state.email );
     };
 
     const content = props.posts.map((post) =>

@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
 import '../App.css';
-import EL from '../images/eyel.PNG';
+
 
 const emailRegex = RegExp(
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
   );
 
-const inputStyle ={
-    border: '0',
-    outline: '0',
-    background: 'transparent',
-    borderBottom: '1px solid gold',
+const listStyle = {
+    color: 'white'
+}
+
+const addresStyle = {
+    color: 'grey'
+}
+const contactStyle = {
+    color: 'rgb(187, 163, 25)'
 }
 
 class App extends Component {
@@ -18,12 +22,14 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {  
-            fullname: '',
+            firstname: '',
+            lastname: '',
             email: '',
             phone: '',
             msg: '',
  formValues: {
-            fullname: '',
+            firstname: '',
+            lastname: '',
             email: '',
             phone: '',
             msg: '',
@@ -32,10 +38,10 @@ class App extends Component {
     
     }
 
-    onsubmit = (event) => {
+    onSubmit = (event) => {
         event.preventDefault();
         console.log('Submitted! ');
-       console.log(this.state.fullname + '' + this.state.email + ''+ this.state.phone + ''+ this.state.msg);
+       console.log(this.state.firstname + '' + this.state.lastname + '' + this.state.email + '' + this.state.phone + ''+ this.state.msg);
     };
 
       handleChange = (event) => {
@@ -47,21 +53,25 @@ class App extends Component {
           const {name,value} = event.target;
           switch(name){
 
-            case "fullname":
+            case "firstname":
                 formValues.firstName =
                   value.length < 3 ? "minimum 3 characters required" : "";
                 break;
+            case "lastname":
+                    formValues.lastName =
+                      value.length < 3 ? "minimum 3 characters required" : "";
+                    break;
             case "email":
                 formValues.email = emailRegex.test(value)
                   ? ""
                   : "invalid email address";
                 break;
             case "phone":
-                formValues.password =
+                formValues.phone =
                   value.length < 10 ? "minimum 10 numbers required" : "";
                 break;
             case "msg":
-                formValues.lastName =
+                formValues.msg =
                   value.length < 3 ? "minimum 3 characters required" : "";
                 break;
             default:
@@ -80,48 +90,93 @@ class App extends Component {
    // const {formValues} = this.state;
      return (
         <div className="ContactContainer">
-            <div className="EL"> <img src={EL} alt="eyelashes"></img></div> 
-            <div className="contactform">
-                <label className="inputform-label"> Full Name:
-                    <input 
-                    className="inputform" 
-                    style={inputStyle}
-                    name="fullname"
-                    type="text"
-                    onChange={this.handleChange}>    
-                    </input>
-                </label>
-                <label className="inputform-label"> Email:
-                    <input 
-                    className="inputform" 
-                    style={inputStyle}
-                    name="email"
-                    type="email"
-                    onChange={this.handleChange}
-                    ></input>
-                </label>
+         
+           <div className="contactForm">
 
-                <label className="inputform-label"> Phone:
-                    <input 
-                    className="inputform" 
-                    style={inputStyle} 
-                    name="phone"
-                    type="phone"
-                    onChange={this.handleChange}
-                    ></input>
-                </label>
-                <label className="inputform-label"> Message:
-                    <input 
-                    className="inputform" 
-                    style={inputStyle}
-                    name="msg" 
-                    type="text"
-                    onChange={this.handleChange}
-                    ></input>
-                </label>
+                <div className="left-contactform">
+                <ul className="list">
+                    <li className="x">
+                        <b style={listStyle}>Adresss</b>
+                        <br></br>
+                        <span style={addresStyle}>Hair Center 9th floor, 3618 Elm St.</span>
+                        <span style={addresStyle}>Houston,TX  77026 US</span>
+                    </li>
+                    <li  className="y">
+                        <b style={listStyle}>Lets Talk</b>
+                        <br></br>
+                        <span style={contactStyle}>+1 800 1236879</span>
+                    </li>
+                    <li  className="z">
+                        <b style={listStyle}>General Support</b>
+                        <br></br>
+                        <span style={contactStyle}>contact@example.com</span>
+                    </li>
+                </ul>
+                </div>
+
+
+
+                <div className="right-contactform">
+                <div className="module"> 
+                <span className="label" >TELL US YOUR NAME *</span>
+                <div className="inputfield-names">
+                <input 
+                className="names" 
+                placeholder="First name"
+                name="firstname"
+                type="text"
+                onChange={this.handleChange}>
+                </input>
+
+                <input 
+                className="names" 
+                placeholder="Last name"
+                name="lastname"
+                type="text"
+                onChange={this.handleChange}
+                ></input>
+                </div>
                 
-                <button onClick={this.onsubmit}> Submit</button>
+                </div>
+               
+                <div className="module">
+                <span className="label" >ENTER YOUR EMAIL *</span>
+                <input 
+                className="inputfield" 
+                placeholder="Eg.example@email.com"
+                name="email"
+                type="email"
+                onChange={this.handleChange}>
+                </input>
+                </div>
+
+                <div className="module">
+                <span className="label" >ENTER PHONE NUMBER</span>
+                <input 
+                className="inputfield" 
+                placeholder="Eg.+1 800 000000"
+                name="phone"
+                type="phone"
+                onChange={this.handleChange}>
+                </input>
+                </div>
+            
+                <div className="module">
+                <span className="label" >MESSAGE *</span>
+                <textarea 
+                className="msg" 
+                placeholder="Write us a message"
+                name="msg"
+                type="text"
+                onChange={this.handleChange}>
+
+                </textarea>
+                </div>
+
+                <button className="form-btn" onClick={this.onSubmit}>Submit</button>
+                </div>
             </div>
+           
             
         </div>
         );

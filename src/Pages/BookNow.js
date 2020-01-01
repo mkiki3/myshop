@@ -1,14 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
-//Arnoldboecklin, fantasy
-/**
- * Impact, fantasy;
-Arnoldboecklin, fantasy;
-Oldtown, fantasy;
-Blippo, fantasy;
-Brushstroke, fantasy;
-fantasy;
- */
+
 
 const titleStyle={
     fontFamily: 'belinda',
@@ -19,7 +11,6 @@ const titleStyle={
 
 const titleStyle2={
     fontFamily: 'lulo-clean-w01-one-bold,sans-serif',
-  
     fontSize:' 50px',
     textAlign:'center',
     margin: '0px'

@@ -179,12 +179,10 @@ body{
     }
 
 
-.row{
- 
-  height: 250px;
-  margin-bottom: 10%;
-  
-}
+  .row{
+    height: 250px;
+    margin-bottom: 10%;
+  }
   
 
   /*Book Now*/
@@ -211,19 +209,7 @@ body{
       list-style: inside;
       padding: 3%;
   }
-
-  /* .appt-btn{
-      background-color: rgb(187, 163, 25);
-      text-decoration: none;
-      min-width: 15%;
-      position: absolute;
-      left: 43%;
-      top: 125%;
-      font-size: medium;
-      text-shadow: 2px 1px grey;
-      border-radius: 10px;
   
-  }*/
   .appt-btn{
       background-color: rgb(187, 163, 25);
       text-decoration: none;
@@ -243,49 +229,111 @@ body{
   
   /*Contact*/
 
-  .EL > img{
-    width: 40%;
-      max-height: 30%;
-      border-radius: 20px 20px 5px 5px;
-      position: absolute;
-      margin-left: 30%; 
-     
-  }
-  
-  .contactform{
-      background-color: white;
-      width: 30%;
-      margin: auto;
-      margin-top: 5%;
-      margin-bottom: 5%;;
-      padding: 5%;
-      padding-top: 20%;
-      border-radius: 20px;
-      border: 2px solid black;
-  }
-  
-  .inputform{
-      background: transparent;
-      font-size: 15px;
-      color: #555555;
-      line-height: 1.2;
-      display: block;
-      width: 100%;
-      padding: 0 5px;
-      border: solid 1px rgb(187, 163, 25);
-  }
-  .inputform::placeholder { 
-    color: rgb(187, 163, 25);
-    opacity: 1; 
-  }
-  
-  .inputform-label{
-      font-size: 15px;
-      color: #808080;
-      width: 100%;
-      padding: 0 5px;
+ .ContactContainer{
+   width: 100%;
+
+ }
+  .contactForm{
+    margin-left: 15%;
+    padding: 5%;
+    display: flex;
+    height: 700px;
+ 
   }
 
+  .left-contactform{ 
+    background-image: url(./images/contactphoto.PNG);
+    background-size: 125%;
+    width: 40%; 
+   
+  }
+
+  .list{
+    margin-top: 30%;
+  }
+  ul{
+    color: grey;
+  }
+
+  .ul {
+    list-style:  url(./images/email1.jpg); ;
+  }
+
+  .x  {
+    padding: 10%;
+    }
+    
+    .y  {
+    padding: 10%;
+    }
+    
+    .z  {
+      padding: 10%;
+      }
+    
+
+  .right-contactform{
+      background-color: white;
+      width: 40%; 
+      display: flex;
+      flex-direction: column;
+  }
+
+  .module{
+   
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    
+  }
+
+ .label{
+    border: solid 1px rgb(236, 232, 232);
+    padding: 3%;
+  }
+
+  .inputfield-names{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .names{
+    width: 45%;
+    border-radius: 1px 1px;
+    border: solid 1px lightgray;
+    background-color: transparent;
+    padding: 3%;
+    font-size: medium;
+  }
+
+  
+  .inputfield{
+    border-radius: 1px 1px;
+    border: solid 1px lightgray;
+    background-color: transparent;
+    padding: 3%;
+    font-size: medium;
+  }
+
+ .msg{
+  border-radius: 2px 2px;
+  border: solid 1px rgb(236, 232, 232);
+  background-color: transparent;
+  padding: 8%;
+  font-size: medium;
+ }
+
+ .form-btn{
+  margin: auto;
+  margin-top: 5%;
+  background-color: grey;
+  border-style: none;
+ }
+
+
+ 
 
   /*SHOP*/
   .ShopContainer{
@@ -319,13 +367,20 @@ margin-bottom: 10%;
       padding: 5%;
       font-family: 'snell roundhand';
       }
-      
-      
-      
-      .sub{
-          background-color: rgb(187, 163, 25);
-          text-decoration: none;
-          width: 8%;
-          font-family: 'snell roundhand';
+
+      .heading3{
+        font-size: x-large;
       }
       
+      .email{
+        width: 40%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1%;
+      }
+      .icons{
+        margin: auto;
+      }
+      
+  

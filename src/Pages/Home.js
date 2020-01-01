@@ -39,12 +39,8 @@ class App extends Component {
         if(popUp === true){
             var newsletter = document.getElementsByClassName('mod1')[0];
             newsletter.style.display = 'none';
-            this.setState({
-                popUp: false
-                //how to pass prop through pages 
-                // so when you return to the home page it wont popup again
-            }) 
-            console.log( 'popup: ',popUp);
+            this.setState({ popUp: !this.state.popUp}, () => console.log(this.state)) 
+            console.log('popup: ',popUp);
         }
      
       }

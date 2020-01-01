@@ -25,10 +25,10 @@ class App extends Component {
   render(){
  
      return (
-        <div class="Sec1">
+        <div className="Sec1">
           <div>
             <h2 style={greyFont}>BRING OUT THE <span style={goldFont}>BEAUTI</span> IN YOU</h2>
-            <button class="book-btn">Book Now</button>
+            <button className="book-btn">Book Now</button>
             </div>
         </div>
         );
