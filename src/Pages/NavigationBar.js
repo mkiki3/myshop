@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../App.css';
-import PB from '../images/logo.png';
 import BL from '../images/bbal.PNG';
 import {Link} from 'react-router-dom';
 
@@ -34,19 +33,22 @@ class App extends Component {
   render(){
  
      return (
+       
+        <div> 
+        <div className="NavPreContainer"> 
+             <img src={BL} alt="" id="logo-pic"></img>
+        </div>
         <div className="NavContainer">
-            <div className="logo"> <img src={PB} alt="Logo"></img>
-            <img src={BL} alt=""></img>
-            </div>
             <ul className="nav-links">
                 <Link className="L" style={listStyle} to="/"><li >HOME</li></Link>
                 <Link className="L" style={listStyle} to="/FAQ"><li >FAQ</li></Link>
                 <Link className="L" style={listStyle} to="/Gallery"><li >GALLERY</li></Link>
-                <Link className="L" style={listStyle} to="/BookNow"><li>BOOKNOW</li></Link>
+                <Link className="L" style={listStyle} to="/BookNow"><li>SERVICES</li></Link>
                 <Link className="L" style={listStyle} to="/Shop"><li >SHOP</li></Link>
                 <Link className="L" style={listStyle} to="/Contact"><li >CONTACT</li></Link>             
             </ul>
         
+        </div>
         </div>
         );
     }
