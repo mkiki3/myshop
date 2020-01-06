@@ -105,7 +105,7 @@ body{
   .FAQ-wrapper{
       background-color: rgb(187, 163, 25);
       width: 70%;
-      height:1050px;
+      height:930px;
       margin: auto;
       color: black;
       font-size: 15px;
@@ -339,7 +339,7 @@ margin-bottom: 10%;
 }
 
 .product{
- border: solid;
+ 
  margin-bottom: 10%;
 }
   
