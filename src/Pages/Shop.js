@@ -22,20 +22,16 @@ const posts = [
 
   const imgStyle = {
     width: '100%',
-    height: '100%',
-    border: 'solid'
-   };
+    height: '100%'
+   }
+
  const iconStyle ={
     width: '10%',
     height: '10%',
     marginLeft: '90%',
 
  }
-   const marginStyle = {
-       marginBottom: '15%'
-   }
-
-
+  
 
   function Blog(props) {
 
@@ -45,11 +41,11 @@ const posts = [
     };
 
     const content = props.posts.map((post) =>
-      <div  key={post.id}>
+      <div className="product" key={post.id}>
          <img style={imgStyle} src={post.img} alt=""></img>
          <img onClick={onSubmit} style={iconStyle} src={post.icon} alt=""></img>
         <h4>{post.title}</h4>
-        <p style={marginStyle}>{post.content}</p>
+        <p >{post.content}</p>
       </div>
     );
     return (
