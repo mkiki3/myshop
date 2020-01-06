@@ -41,7 +41,7 @@ const posts = [
 
     const onSubmit = (event) => {
         event.preventDefault();
-        console.log('Submitted! ');
+        alert('added to the cart! ');
     };
 
     const content = props.posts.map((post) =>
