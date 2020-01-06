@@ -22,7 +22,8 @@ const posts = [
 
   const imgStyle = {
     width: '100%',
-    height: '100%'
+    height: '100%',
+    border: 'solid'
    };
  const iconStyle ={
     width: '10%',
@@ -33,6 +34,8 @@ const posts = [
    const marginStyle = {
        marginBottom: '15%'
    }
+
+
 
   function Blog(props) {
 

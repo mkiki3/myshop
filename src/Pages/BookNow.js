@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
 
-
 const titleStyle={
     fontFamily: 'belinda',
     fontSize:' 55px',
@@ -27,6 +26,14 @@ const bStyle ={
     backgroundColor: 'rgb(187, 163, 25)'
 }
 
+const bookStyle = {
+    backgroundColor: 'rgb(187, 163, 25)',
+    fontSize: 'medium',
+    width: '20%',
+    left: '43%',
+    marginTop: '3%'
+
+}
 
 class App extends Component {
   
@@ -58,7 +65,7 @@ class App extends Component {
                     <li><span>Read your <b>confirmation e-mail </b>for pre-appointment prep & contact/location information.</span></li>
                     <li><span>Come to your appointment ready to <b>RELAX</b> & wake up with <b>GORGEOUS</b> lashes</span></li>
                 </ul>
-                <button className="appt-btn"><a href="https://www.styleseat.com/m/v/priscabreshaybarnes"><b>CLICK HERE TO BOOK</b></a></button>
+                <button style={bookStyle}><a href="https://www.styleseat.com/m/v/priscabreshaybarnes"><b>CLICK HERE TO BOOK</b></a></button>
               </div>
               
               </div> 

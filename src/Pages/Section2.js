@@ -13,7 +13,8 @@ const titleStyle={
 
 const containerStyle={
     backgroundColor: 'black',
-    color: 'white'
+    color: 'white',
+    padding: '3%'
 }
 
 class App extends Component {
