@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import '../App.css';
 import Insta from '../images/instaicon.png'
 import FB from '../images/fbicon.png'
-//import TW from '../images/twittericon.png'
+import TW from '../images/twicon.png'
 
 const imgStyle = {
   width: '3%',
@@ -70,9 +70,9 @@ class App extends Component {
           </div>
          
           <div className="icons">
-          <img style={imgStyle} src={Insta} alt="insta"></img>
-          <img style={imgStyle} src={FB} alt="fb"></img>
-          <img style={imgStyle} src={FB} alt="twitter"></img>
+          <a href="https://www.instagram.com"><img style={imgStyle} src={Insta} alt="insta"></img></a>
+          <a href="https://www.facebook.com"><img style={imgStyle} src={FB} alt="fb"></img></a>
+          <a href="https://www.twitter.com"><img style={imgStyle} src={TW} alt="twitter"></img></a>
           </div>
         </div>
         );

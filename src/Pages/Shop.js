@@ -22,7 +22,8 @@ const posts = [
 
   const imgStyle = {
     width: '100%',
-    height: '100%'
+    height: '100%',
+    border: 'solid'
    };
  const iconStyle ={
     width: '10%',
@@ -34,11 +35,13 @@ const posts = [
        marginBottom: '15%'
    }
 
+
+
   function Blog(props) {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        console.log('Submitted! ');
+        alert('added to the cart! ');
     };
 
     const content = props.posts.map((post) =>

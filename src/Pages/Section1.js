@@ -8,10 +8,21 @@ const greyFont={
   fontFamily: 'snell roundhand'
 }
 
-const goldFont={
+const goldFont = {
   color: '#BBA319',
 }
 
+const backgroundStyle={
+  backgroundColor: 'white',
+  opacity: '0.6',
+  borderRadius: '10px'
+}
+
+const booknowStyle = {
+  backgroundColor: 'rgb(187, 163, 25)',
+  fontSize: 'large',
+  width: '20%'
+}
 
 class App extends Component {
   
@@ -27,8 +38,8 @@ class App extends Component {
      return (
         <div className="Sec1">
           <div>
-            <h2 style={greyFont}>BRING OUT THE <span style={goldFont}>BEAUTI</span> IN YOU</h2>
-            <button className="book-btn">Book Now</button>
+            <div style={backgroundStyle}><h2 style={greyFont}>BRING OUT THE <span style={goldFont}>BEAUTI</span> IN YOU</h2></div>
+            <button style={booknowStyle} className="book-btn">Book Now</button>
             </div>
         </div>
         );
