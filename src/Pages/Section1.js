@@ -15,14 +15,19 @@ const goldFont = {
 const backgroundStyle={
   backgroundColor: 'white',
   opacity: '0.6',
-  borderRadius: '10px'
+  maxWidth: '750px',
 }
 
-const booknowStyle = {
-  backgroundColor: 'rgb(187, 163, 25)',
-  fontSize: 'large',
-  width: '20%'
-}
+/*const booknowStyle = {
+  border: 'none',
+  color: 'white',
+  textAlign: 'center',
+  padding: '15px 32px',
+  textDecoration: 'none',
+  display: 'inline-block',
+  fontSize: '20px',
+
+}*/
 
 class App extends Component {
   
@@ -37,9 +42,9 @@ class App extends Component {
  
      return (
         <div className="Sec1">
-          <div>
-            <div style={backgroundStyle}><h2 style={greyFont}>BRING OUT THE <span style={goldFont}>BEAUTI</span> IN YOU</h2></div>
-            <button style={booknowStyle} className="book-btn">Book Now</button>
+          <div className="intro">
+            <div id="header-bg" style={backgroundStyle}><h2 style={greyFont}>BRING OUT THE <span style={goldFont}>BEAUTI</span> IN YOU</h2></div>
+            <button className="book-btn">Book Now!</button>
             </div>
         </div>
         );
