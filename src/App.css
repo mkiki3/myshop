@@ -23,12 +23,11 @@ body{
       margin-bottom: 25px;
   }
   /*  background-color: rgb(136, 196, 1   36);*/
-  button{
+  /*button{
       background-color: gainsboro;
       width: 90px;
       height: 40px;
-      border-radius: 5px;  
-  }
+  }*/
   
   
   /*NavBar*/
@@ -39,17 +38,30 @@ body{
       justify-content: space-around;
       align-items: center;
   }
-  
-  .logo > img{
-      width: 20%;
+   .NavPreContainer{
+      background-color: white;
+      border-bottom: solid rgb(187, 163, 25);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
   }
-  
+  #logo-pic{
+      width: 20%;
+      padding: 15px;
+  }
+
+  #logo-img{
+      width: 17%;
+      margin-top:50px;
+      padding: 10px;
+      float:left;
+  }
+
   .nav-links {
       display: flex;
       list-style: none;
       font-family: "Courier New";
       font-size: x-large;
-      margin-right: 20%;
       justify-content: space-evenly;
   }
   
@@ -59,11 +71,6 @@ body{
   
   .L:hover{
       color: gold;
-  }
-  
-  button{
-    border: none;
-    border-radius: 10px;
   }
   
   /*Section 1*/
@@ -84,6 +91,31 @@ body{
     left: 30%;
     top: 15%;
 }
+
+.intro{
+      margin-left: 20%;
+}
+#header-bg{
+  box-shadow: 3px 3px 3px rgb(184, 182, 180);
+  text-decoration: none;
+}
+
+ .book-btn{
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 13px 30px;
+  font-weight: bold;
+  font-size: x-large;
+  display: inline-block;
+  font-size: 17px;
+  background-color: rgb(187, 163, 25)
+  }
+
+  .book-btn:hover{
+  border: 1px solid rgb(184, 182, 180);
+  box-shadow: 3px 3px 3px rgb(184, 182, 180);
+  }
   
   /*Section 2*/
   .Sec2{
@@ -111,11 +143,13 @@ body{
       font-size: 15px;
       padding: 2%;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+  } 
+
    li> span{ 
       color: black;
   }
 
+ 
   /*.ImGallery{
       display: grid;
       grid-gap: 20% 5%;

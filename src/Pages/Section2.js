@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
+import PB from '../images/logo.png';
 
 const txtStyle = {
    textAlign: 'center',
@@ -14,7 +15,7 @@ const titleStyle={
 const containerStyle={
     backgroundColor: 'black',
     color: 'white',
-    padding: '3%'
+    padding: '20px'
 }
 
 class App extends Component {
@@ -30,8 +31,12 @@ class App extends Component {
  
      return (
         <div class="Sec2">
-          
            <div style={containerStyle}>
+           <section>
+           
+           <img src={PB} alt="" id="logo-img"></img>
+           </section>
+           <article>
            <h2 style={titleStyle}>Mission Statment/Why?</h2>
            <p style={txtStyle}>Wake up a GORGEOUS Doll!</p> 
            <p style={txtStyle}>Eyelash Extensions and Eyelash Strips are the perfect enhancement for all Queens 
@@ -42,6 +47,7 @@ class App extends Component {
             Prisca "Bre" Barnes is a Licensed Eyelash Extension Mobile Artist based in Houston, Texas. The artistry of lashing
             is phenomenal! The technique involves attaching a synthetic, silk or mink eyelash extension to an individual natural eyelash
             on the client, with the result of longer, darker and more lavish lashes.</p>
+            </article>
         </div>
         </div>
         );
