@@ -22,13 +22,12 @@ body{
       opacity: 0.5;
       margin-bottom: 25px;
   }
-  /*  background-color: rgb(136, 196, 1   36);*/
-  /*button{
-      background-color: gainsboro;
-      width: 90px;
-      height: 40px;
-  }*/
   
+/*global default design*/
+  button{
+    border-style: none;
+    border-radius: 5px;
+  }
   
   /*NavBar*/
   .NavContainer{
@@ -75,7 +74,7 @@ body{
   
   /*Section 1*/
   .Sec1{
-  background-image: url(./images/model4.jpg);
+  background-image: url(./images/braids.jpg);
   padding: 15%;
   }
   
@@ -100,17 +99,6 @@ body{
   text-decoration: none;
 }
 
- .book-btn{
-  border: none;
-  color: white;
-  text-align: center;
-  padding: 13px 30px;
-  font-weight: bold;
-  font-size: x-large;
-  display: inline-block;
-  font-size: 17px;
-  background-color: rgb(187, 163, 25)
-  }
 
   .book-btn:hover{
   border: 1px solid rgb(184, 182, 180);
@@ -212,6 +200,11 @@ body{
   
 
   /*Book Now*/
+
+.BookContainer{
+  padding: 3%;
+}
+
   .book-wrapper{
       background-color: white;
       width: 73%;
@@ -227,13 +220,14 @@ body{
   
   .appt{
       background-color: grey;
-      width: 67%;
+      width: 63%;
       height:280px;
       color: black;
       position: absolute;
       font-size: 16px;
       list-style: inside;
       padding: 3%;
+     
   }
   
 
@@ -247,11 +241,12 @@ body{
 
  .ContactContainer{
    width: 100%;
+ 
 
  }
   .contactForm{
     margin-left: 15%;
-    padding: 5%;
+    padding: 4%;
     display: flex;
     height: 700px;
  
@@ -341,16 +336,6 @@ body{
   font-size: medium;
  }
 
- .form-btn{
-  margin: auto;
-  margin-top: 5%;
-  background-color: grey;
-  border-style: none;
- }
-
-
- 
-
   /*SHOP*/
   .ShopContainer{
     padding: 3%;
@@ -398,6 +383,7 @@ margin-bottom: 10%;
         display: flex;
         justify-content: space-evenly;
         padding-top: 1%;
+     
       }
       .icons{
         margin: auto;

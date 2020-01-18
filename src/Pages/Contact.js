@@ -16,6 +16,13 @@ const addresStyle = {
 const contactStyle = {
     color: 'rgb(187, 163, 25)'
 }
+const buttonStyle = {
+    backgroundColor: 'grey',
+    fontSize: 'large',
+    width: '25%',
+    margin: 'auto',
+    marginTop: '5%'
+}
 
 class App extends Component {
   
@@ -173,7 +180,7 @@ class App extends Component {
                 </textarea>
                 </div>
 
-                <button className="form-btn" onClick={this.onSubmit}>Submit</button>
+                <button style={buttonStyle} onClick={this.onSubmit}>Submit</button>
                 </div>
             </div>
            

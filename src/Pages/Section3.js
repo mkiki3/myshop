@@ -46,15 +46,15 @@ class App extends Component {
         <div className="Sec3">
              <div style={titleStyle}>
                  <span >@BBEAUTIANDLASHES</span>
-              <span><b>on all social platforms</b></span>
+              <span><b> on all social platforms</b></span>
               <br></br>
             <div style={hashtagStyle}><i>#BBEAUTIANDLASHES  #BBEAUTIANDLASHES #BBEAUTIANDLASHES </i></div>
              </div>
         <div style={containerStyle}>  
            <img style={imgStyle} src={img1} alt="eyelashes"></img>
-           <img style={imgStyle} src={img2} alt="eyelashes"></img>
-           <img style={imgStyle} src={img3} alt="eyelashes"></img>
            <img style={imgStyle} src={img4} alt="eyelashes"></img>
+           <img style={imgStyle} src={img3} alt="eyelashes"></img>
+           <img style={imgStyle} src={img2} alt="eyelashes"></img>
            </div>
         </div>
         );

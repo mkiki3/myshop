@@ -41,3 +41,12 @@ componentWillMount(){
 }
 
 export default App;
+
+/*
+ <Route exact path='/' component={Home} />  
+          <Route path='/FAQ' component={FAQ} />
+          <Route path='/Gallery' component={Gallery} />
+          <Route path='/BookNow' component={BookNow} />
+          <Route path='/Contact' component={Contact} />
+          <Route path='/Shop' component={Shop} />
+*/ 

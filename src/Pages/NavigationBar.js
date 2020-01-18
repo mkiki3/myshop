@@ -55,3 +55,12 @@ class App extends Component {
 }
 
 export default App;
+
+/**
+ *            <Link className="L" style={listStyle} to="/"><li >HOME</li></Link>
+                <Link className="L" style={listStyle} to="/FAQ"><li >FAQ</li></Link>
+                <Link className="L" style={listStyle} to="/Gallery"><li >GALLERY</li></Link>
+                <Link className="L" style={listStyle} to="/BookNow"><li>SERVICES</li></Link>
+                <Link className="L" style={listStyle} to="/Shop"><li >SHOP</li></Link>
+                <Link className="L" style={listStyle} to="/Contact"><li >CONTACT</li></Link>   
+ */

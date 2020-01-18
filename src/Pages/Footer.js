@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import '../App.css';
-import Insta from '../images/instaicon.png'
-import FB from '../images/fbicon.png'
-import TW from '../images/twicon.png'
+import Insta from '../images/instaicon.jpg'
+import FB from '../images/fbicon.jpg'
+import TW from '../images/twicon.jpg'
 
 const imgStyle = {
   width: '3%',
@@ -21,7 +21,8 @@ const inputStyle = {
  const buttonStyle = {
    textDecoration: 'none',
    width: '20%',
-   marginTop: '-1%',
+   height: '10%'
+ 
    };
 
 
@@ -55,7 +56,7 @@ class App extends Component {
  
      return (
         <div className="footer">
-          <h3 className="heading3">Join the BBeautiandlashes Mailing "BeauTEA" List</h3>
+          <h3 className="heading3">Join BBeautiandLashes Mailing "BeauTEA" Circle</h3>
           
           <div className="email">
             <input 
@@ -70,8 +71,8 @@ class App extends Component {
           </div>
          
           <div className="icons">
-          <a href="https://www.instagram.com"><img style={imgStyle} src={Insta} alt="insta"></img></a>
-          <a href="https://www.facebook.com"><img style={imgStyle} src={FB} alt="fb"></img></a>
+          <a href="https://www.instagram.com/bbeautiandlashes/"><img style={imgStyle} src={Insta} alt="insta"></img></a>
+          <a href="https://www.facebook.com/bbeautiNlashes"><img style={imgStyle} src={FB} alt="fb"></img></a>
           <a href="https://www.twitter.com"><img style={imgStyle} src={TW} alt="twitter"></img></a>
           </div>
         </div>
@@ -81,7 +82,3 @@ class App extends Component {
 
 export default App;
 
-/**
- * a href="https://www.instagram.com"
- * a href="https://www.twitter.com"
- * a href="https://www.facebook.com" */

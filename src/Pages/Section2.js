@@ -4,12 +4,19 @@ import PB from '../images/logo.png';
 
 const txtStyle = {
    textAlign: 'center',
-   lineHeight: '1.6'
+   lineHeight: '1.6',
+   fontSize: 'x-large'
   };
 
+  const txtStyle2 = {
+    textAlign: 'center',
+    lineHeight: '1.6'
+   };
+  
 const titleStyle={
     color: '#BBA319',
     textAlign: 'center'
+  
 }
 
 const containerStyle={
@@ -37,9 +44,9 @@ class App extends Component {
            <img src={PB} alt="" id="logo-img"></img>
            </section>
            <article>
-           <h2 style={titleStyle}>Mission Statment/Why?</h2>
+           <h2 style={titleStyle}><i>Mission Statement</i></h2>
            <p style={txtStyle}>Wake up a GORGEOUS Doll!</p> 
-           <p style={txtStyle}>Eyelash Extensions and Eyelash Strips are the perfect enhancement for all Queens 
+           <p style={txtStyle2}>Eyelash Extensions and Eyelash Strips are the perfect enhancement for all Queens 
            that love to wake up with GOREGEOUS luxury eyelashes that POP. Whether you're a busy career woman, a
             trendy socialite, an ambitious student, or a super multi-tasking mom on the go, eyelash extensions 
             and eyelash strips are the perfect "go-to", to give you a GORGEOUS set of eyes that will surely make
