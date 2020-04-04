@@ -62,7 +62,7 @@ class App extends Component {
 
             case "firstname":
                 formValues.firstName =
-                  value.length < 3 ? "minimum 3 characters required" : "";
+                  value.length < 3 ? "minimum 4 characters required" : "";
                 break;
             case "lastname":
                     formValues.lastName =
