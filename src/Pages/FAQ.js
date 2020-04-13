@@ -37,7 +37,7 @@ class App extends Component {
                 <ol style={colorStyle}>
                 <li><span><b>MYTH: </b></span>
                 <br></br>
-                <span>You cannot wash your eyes while wearing lash extensions.</span>
+                <span>You can't wash your eyes while wearing lash extensions..</span>
                 <br></br>
                 <span><b>FACT: </b></span>
                 <br></br>
