@@ -39,7 +39,7 @@ class App extends Component {
                 <br></br>
                 <span>You can't wash your eyes while wearing lash extensions...</span>
                 <br></br>
-                <span><b>FACT:.. </b></span>
+                <span><b>FACT: </b></span>
                 <br></br>
                 <span>Not only can you wash your lashes, but it is RECOMMENDED! You want to clean your 
                     lashes DAILY. Cleaning your lashes will remove any unwanted dirt, debris, make-up 
