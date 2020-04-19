@@ -24,8 +24,8 @@ class App extends Component {
         super(props);
         this.state = {  
          email: " ",
-         name: "",
-         field: ""
+         name: ""
+ 
         };
     }
 
