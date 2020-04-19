@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-/// hiuwefjbeyyggkfghuj
+/// hiuwefjbey
 const titleStyle = {
     textAlign: 'center',
     margin: '0px',
